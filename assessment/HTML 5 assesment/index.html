@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/mobile.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/tablet.css'>
+    
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <div class="calculator">
+            
+        <table>
+            <tr>
+                <input type="text" placeholder="0" id="result" style="text-align: right;">
+            </tr>
+
+            <tr>
+                <th><button class="operator"  onclick="clr()">AC</button></th>
+                <th><button type="button" class="operator" onclick="back()">DEL</button></th>
+                <th><button type="button" onclick="pr()" class="operator">%</button></th>
+                <th><button type="button" class="operator" value="/" onclick="return display(this.value)">/</button></th>
+            </tr>
+
+            <tr>
+                <th><button type="submit" value="7" onclick="return display(this.value)">7</button></th>
+                <th><button type="submit" value="8" onclick="return display(this.value)">8</button></th>
+                <th><button type="submit" value="9" onclick="return display(this.value)">9</sub></button></th>
+                <th><button type="submit" class="operator" value="*" onclick="return display(this.value)">x</button></th>
+            </tr>
+            
+            <tr>
+                <th><button type="submit" value="4" onclick="return display(this.value)">4</button></th>
+                <th><button type="submit" value="5" onclick="return display(this.value)">5</button></th>
+                <th><button type="submit" value="6" onclick="return display(this.value)">6</button></th>
+                <th><button type="submit" class="operator" value="-" onclick="return display(this.value)">-</button></th>
+            </tr>
+
+            <tr>
+                <th><button type="submit" value="1" onclick="return display(this.value)">1</button></th>
+                <th><button type="submit" value="2" onclick="return display(this.value)">2</button></th>
+                <th><button type="submit" value="3" onclick="return display(this.value)">3</button></th>
+                <th><button type="submit" class="operator" value="+" onclick="return display(this.value)">+</button></th>
+            </tr>
+            
+            <tr>
+                <th><button type="submit" value="0" onclick="return display(this.value)">0</button></th>
+                <th><button type="submit" value="00" onclick="return display(this.value)">00</button></th>
+                <th><button type="submit" value="." onclick="return display(this.value)">.</button></th>
+                <th><button type="submit" value="=" onclick="finalresult()" class="equalBtn">=</button></th>
+            </tr>
+
+        </table>
+    </div>
+
+    <script src='main-script.js'></script>
+</body>
+</html>

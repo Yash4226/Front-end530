@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(162, 183, 205, 0.447);
+}
+
+html a {
+    text-decoration: none;
+}
+
+html ul li {
+    list-style: none;
+}
+
+form{
+    width: 70%;
+    margin: auto;
+    border: 1px solid gray;
+    background-color: rgba(162, 183, 205, 0.605);
+    border-radius: 5px;
+    padding: 5px 30px;
+}
+
+form h1{
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 0;
+    border-bottom: 1px solid;
+    width: fit-content;
+}
+
+form input {
+    margin-top: 2%;
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+
+
+.gender {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px 0;
+    margin: 0;
+    width: fit-content;
+}
+
+textarea{
+    padding: 5px;
+    margin-top: 2%;
+}
+
+select {
+    margin-top: 2%;
+    padding: 3px;
+}
+
+.Specialization{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.Specialization input{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: inline-block;
+}
+
+
+form button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+form label .error{
+    font-weight: 700;
+    display: block;
+    color: red !important;
+    font-size: 14px;
+}
+
+@media only screen and (min-width:280px) and (max-width:480px){
+
+
+    form{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    form input {
+        width: 50% !important;
+    }
+
+    .Specialization input{
+        display: flex;
+        width: 50%;
+    }
+
+    table {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

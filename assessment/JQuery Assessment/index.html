@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="img/download.png" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+
+
+</head>
+<body>
+    
+    <form name="formValidation" id="formValidation" action="submit.html" method="get" autocomplete="off" novalidate>
+        <h1>Registration Form</h1>
+
+        <table>
+            <tr>
+                <td>First Name :</td>
+                <td><input type="text" name="name" id="FirstName" placeholder="Enter Your First Name *" required></td>
+            </tr>
+
+            <tr>
+                <td>Last Name :</td>
+                <td><input type="text" name="name" id="LastName" placeholder="Enter Your Last Name *" required><br></td>
+            </tr>
+
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" name="email" id="Email" placeholder="Enter Your Email *" required></td>
+            </tr>
+
+            <tr>
+                <td>Phone no. :</td>
+                <td><input type="number" name="number" id="Number" placeholder="Enter Your Phone Number *" required></td>
+            </tr>
+
+            <tr>
+                <td>Gender :</td>
+                <td class="gender">
+                    <input type="radio" name="gender" id="Gender" value="male">Male
+                    <input type="radio" name="gender" id="Gender" value="female">Female
+                    <input type="radio" name="gender" id="Gender" value="other">Other
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth :</td>
+                <td><input type="date" name="dob" id="DOB" required></td>
+            </tr>
+
+            <tr>
+                <td>Address :</td>
+                <td><textarea rows="1" col="50" placeholder="Address"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>City :</td>
+                <td><select name="city">
+                    <option value="">-select city-</option>
+                    <option value="1">Ahembdabad</option>
+                    <option value="2">Rajkot</option>
+                    <option value="3">Gandhinagar</option>
+                    <option value="4">Amreli</option>
+                    <option value="5">Vadodara</option>
+                    <option value="6">Junagadh</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>State :</td>
+                <td><select name="state">
+                    <option value="">-select state-</option>
+                    <option value="1">Gujarat</option>
+                    <option value="2">Maharastra</option>
+                    <option value="3">Delhi</option>
+                    <option value="4">Rajasthan</option>
+                    <option value="5">Goa</option>
+                    <option value="6">UP</option>
+                    </select>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>Qualification :</td>
+                <td><select name="edu">
+                    <option value="">-select Qualification-</option>
+                    <option value="1">10th</option>
+                    <option value="2">12th</option>
+                    <option value="3">Graduation</option>
+                    <option value="4">Post-Graduation</option>
+                    <option value="5">Master Degree</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Specialization :</td>
+
+                <td class="Specialization">
+                    <input type="checkbox" name="check" id="chk" value="CS">ComputerScience
+                    <input type="checkbox" name="check" id="chk" value="IT">IT
+                    <input type="checkbox" name="check" id="chk" value="ca">ComputerArchitecher
+                    <input type="checkbox" name="check" id="chk" value="tc">TeleComputer
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password :</td>
+                <td>
+                    <input type="password" name="pass" id="password" placeholder="Password *" required>
+                </td>
+            </tr>
+            
+
+        </table>
+
+        <button type="submit">Registered</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

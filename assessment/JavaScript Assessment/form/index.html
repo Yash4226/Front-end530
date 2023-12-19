@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fill this form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='form.js'></script>
+</head>
+<body>
+    <center>
+        <div class="form">  
+            <h1>registration FORM</h1>
+            
+            <form action="welcome.html" name="frm" method="post" onsubmit="return validateForm()">
+
+
+                <i class="fa fas fa-envelope"></i><input class="input1" type="email" name="email" id="email" placeholder="Email" required>
+                <br><br>
+                <i class="fa fas fa-lock"></i><input class="input1" type="password" name="pass" id="pass" placeholder="Password" required>
+                <br><br>
+                <i class="fa fas fa-lock"></i><input class="input1" type="password" name="pass" id="repass" placeholder="Re-type Password" required>
+                <br><br>
+                <i class="fa fas fa-user"></i><input class="input1" type="text" name="Fname" id="Fname" placeholder="First Name" required>
+                <i class="fa fas fa-user"></i><input class="input1" type="text" name="Lname" id="Lname" placeholder="Last Name" required>
+                <br><br><br>
+
+                <div class="gender">
+                    Male:<input type="radio" name="gender" value="male" id="gender">
+                    Female:<input type="radio" name="gender" value="fmale" id="gender">
+                    Other:<input type="radio" name="gender" value="other" id="gender">
+                </div>
+
+
+                <select name="country" id="country">
+                    <option value="county">Select a country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="UK">UK</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Russia">Russia</option>
+                    <option value="China">China</option>
+                </select>
+                <br> <br>
+
+                
+                    <input type="checkbox" name="check" id="checkbox" value="ckeck"> I agree with term and condition
+                    <br>
+                    <input type="checkbox" name="check" id="checkbox" value="ckeck"> I want to recieve the newsletter
+                <br><br>
+
+                 <button type="submit" value="register" id="register" aria-colspan="">Register</button>
+                
+            </form>
+        </div>
+    </center>
+    
+</body>
+</html>

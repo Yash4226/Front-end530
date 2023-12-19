@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background: slategrey;
+}
+
+
+.card .heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .heading .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .heading .logo h2{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.card .heading .logo h3{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.detail p{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card .footer h4{
+    font-size: 20px;
+    padding: 10px 0; 
+}
