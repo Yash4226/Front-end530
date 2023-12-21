@@ -1,0 +1,152 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+#nav {
+    width: 13%;
+    height: 700px;
+    padding: 2%;
+    background-color: black;
+    text-align: right;
+    float: right;
+
+    
+}
+
+#nav h2 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5%;
+}
+
+
+.navbar ul li {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+#nav .home {
+    color: crimson;
+    margin-top: 50%;
+}
+
+.navbar a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+span {
+    color: white;
+    margin-top: 10%;
+    margin-left: 10%;
+} 
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+#photo > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#photo {
+    width: 83%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+#photo .wide {
+    grid-column: span 2;
+}
+
+#photo .tall {
+    grid-row: span 2;
+}
+
+#photo .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    #nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        position: fixed;
+        top: 0%;
+    }   
+
+    #nav h2 {
+        font-size: 18px;
+        width: fit-content;
+    }
+
+    .navbar {
+        width: 99%;
+        padding: 0%;
+    }
+
+    .navbar ul li {
+        display: inline;
+        font-size: 12px;
+        width: fit-content;
+        padding: 0%;
+        margin-right: 2%;
+    }
+
+    .navbar span {
+        margin: 0%;
+        margin-right: 2%;
+        float: right;
+    }
+
+    #photo {
+        margin-top: 20%;
+        width: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+
+
