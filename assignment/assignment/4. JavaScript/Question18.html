@@ -1,0 +1,30 @@
+<!-- Create password field with show hide functionalities -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function shwp(){
+            var pass = document.getElementById("password");
+            if (pass.type === "password") {
+                pass.type = "text";
+            }
+            else {
+                pass.type = "password";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter Password : </label>
+        <input type="password" value="123456789" placeholder="Enter Password" id="password">
+        <br>
+        <input type="checkbox" onclick="shwp()"> Show password
+    </form>
+</body>
+</html>

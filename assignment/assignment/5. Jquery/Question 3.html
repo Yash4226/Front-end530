@@ -1,0 +1,42 @@
+<!-- 
+    How to create slider with animation?
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            height: 500px;
+            width: 100%;
+        }
+
+        .main img{
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="img/2000119-mountain-forest-sun-green-nature-sunrise-clouds-sky.jpg" alt="">
+        <img src="img/Accelerating-business-along-the-road-to-a-nature-positive-future_i1140.jpg" alt="">
+        <img src="img/istockphoto-517188688-1024x1024.jpg" alt="">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".main").cycle("turnLeft");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!-- Create basic math operation in JS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function adi(){
+            var a = parseInt(document.getElementById("firstNum").value);
+            var b = parseInt(document.getElementById("lastNum").value);
+            var c = a + b;
+            document.getElementById("ans").value = c;
+        };
+        
+        
+        function sub(){
+            var a = parseInt(document.getElementById("firstNum").value);
+            var b = parseInt(document.getElementById("lastNum").value);
+            var c = a - b;
+            document.getElementById("ans").value = c;
+        };
+        
+        function multi(){
+            var a = parseInt(document.getElementById("firstNum").value);
+            var b = parseInt(document.getElementById("lastNum").value);
+            var c = a * b;
+            document.getElementById("ans").value = c;
+        };
+        
+        function div(){
+            var a = parseInt(document.getElementById("firstNum").value);
+            var b = parseInt(document.getElementById("lastNum").value);
+            var c = a / b;
+            document.getElementById("ans").value = c;
+        };
+        
+        function pr(){
+            var a = parseInt(document.getElementById("firstNum").value);
+            var b = parseInt(document.getElementById("lastNum").value);
+            var c = a % b;
+            document.getElementById("ans").value = c;
+        };
+
+    </script>
+
+</head>
+<body>
+    <h1>Maths Oparation</h1>
+
+    <label for="">Enter 1st Number :</label>
+    <input type="number" value="" id="firstNum">
+    <br><br>
+    <label for="">Enter 2nd Number :</label>
+    <input type="number" value="" id="lastNum">
+    <br><br>
+
+    <button type="button" value="+" onclick="adi()">+</button>
+    
+    <button type="button" value="-" onclick="sub()">-</button>
+
+    <button type="button" value="*" onclick="multi()">*</button>
+
+    <button type="button" value="/" onclick="div()">/</button>
+  
+    <button type="button" value="%" onclick="pr()">%</button>
+
+    <p>Answer : <input type="number" id="ans"></p>
+</body>
+</html>
