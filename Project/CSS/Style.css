@@ -1,0 +1,350 @@
+body
+{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+/* start header area */
+
+#header
+{
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    width: 100%;
+}
+
+.mainheader
+{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #f4f4f4;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.upper-header
+{
+    margin: 0;
+    width: 60%;
+    height: auto;
+
+}
+
+.upper-header li
+{
+    display: inline-block;
+    padding:3px 20px;
+}
+
+.upper-header a
+{
+    text-decoration: none;
+    color:gray;
+    list-style-type: none;
+}
+
+.upper-header1
+{
+    width: 18%;
+    height: auto;
+    background-color: #f4f4f4;
+    margin: auto;
+}
+
+.upper-header1 select
+{
+    border: none;
+    background-color: #f4f4f4;
+    color:gray;
+    margin: auto;
+}
+
+.middleheader
+{
+    margin-top: 2%;
+    padding: 0%;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo
+{
+    width: 60%;
+    height: auto;
+    margin: auto;
+
+}
+
+.cartbox
+{
+    width: 10%;
+    height: auto;
+    margin: auto;
+}
+
+.cartbox button
+{
+    width: 120px;
+    height: 50px;
+    border: none;
+}
+
+.lowerheader
+{
+    margin: auto;
+    padding: 0%;
+    width: 100%;
+    height: auto;
+}
+
+.lowerheader li
+{
+    display: inline-flex;
+    padding: 20px 20px;
+}
+
+.lowerheader a
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: darkgrey;
+}
+
+.active 
+{
+    background-color: #5a88ca;
+}
+
+.active a
+{
+    color: #f4f4f4;
+}
+
+.lowerheader  li:hover 
+{
+    background-color: #5a88ca;
+    color: white;
+}
+
+.lowerheader  a:hover
+{
+    color: #f4f4f4;
+}
+
+
+
+
+/* start content area */
+
+#slider
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#slider img
+{
+    width: 100%;
+}
+
+#boxcontent
+{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top:  0%;
+}
+
+#boxcontent img
+{
+    margin-top: 0%;
+}
+
+h1
+{
+    font-size: 45px;
+    font-weight: 100;
+    text-align: center;
+    color: gray;
+}
+
+.con-btn
+{
+    width: 100%;
+    height: auto;
+    text-align: right;
+}
+
+.con-btn button
+{
+    background-color: red;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    color: #f4f4f4;
+}
+
+.product
+{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+.product img
+{
+    width: 180px;
+    height: 300px;
+    border: 1px solid gray;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.product figcaption
+{
+    margin-left: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.ourbrands
+{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.ourbrands img
+{
+    width: 180px;
+    height: 100px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+
+/* start footer area */
+
+#footer
+{
+    margin: 0%;
+    padding: 0%;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1
+{
+    margin-left: 2%;
+    width: 25%;
+    height: auto;
+}
+
+.footer2
+{
+    margin: 0%;
+    width: 25%;
+    height: auto;
+}
+
+.footer2,.footer3 td 
+{
+    color: gray;
+}
+
+.footer3
+{
+    margin: 0%;
+    width: 20%;
+    height: auto;
+}
+
+.footer4
+{
+    margin:0%;
+    width: 30%;
+    height: auto;
+}
+
+#footer h1
+{
+    text-align: left;
+    color: #ffffff;
+}
+
+#footer p
+{
+    justify-content: left;
+    color: gray;
+}
+
+
+
+
+.fa-facebook
+{
+    background-color: #5a88ca;
+    color: #ffffff;
+    padding:10px;
+}
+
+.fa-twitter-square
+{
+    background-color: #5a88ca;
+    color: #ffffff;
+    padding:10px;
+}
+
+.fa-youtube-square
+{
+    background-color: #5a88ca;
+    color: #ffffff;
+    padding:10px;
+}
+
+.fa-linkedin
+{
+    background-color: #5a88ca;
+    color: #ffffff;
+    padding:10px;
+}
+
+.footer4 input
+{
+    padding: 5px;
+}
+
+.footer4 button
+{
+    background-color: #5a88ca;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+}
+
+#btmfooter
+{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #ffffff;    
+}
